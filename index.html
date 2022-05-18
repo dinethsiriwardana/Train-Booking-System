@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="Styles\bootstrap\bootstrap.css">
+    <!--  bootstrap -->
+    <link rel="stylesheet" href="Styles\customcss\style.css">
+    <!--  custom css -->
+    <link rel="stylesheet" href="Styles\customcss\slidercss.css">
+    <!--  custom css -->
+    <link rel="stylesheet" href="Styles\customcss\stylebox.css">
+    <!--  custom css -->
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+    <div class="container-fluid bg-dark" id="header1">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"></svg>
+                <span class="fs-4 white">Ceylon Train</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link text-white bg-primary " aria-current="page">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Let's Go
+          </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="trainmap.html">Train Map</a></li>
+                        <li><a class="dropdown-item" href="trainlist.html">Train List</a></li>
+                        <li><a class="dropdown-item" href="#">Train Search</a></li>
+                        <li><a class="dropdown-item" href="costcal.html">Price Calculator</a></li>
+                        <li><a class="dropdown-item" href="booking.html">Train Seat Booking</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                <li class="nav-item"><a href="history.html" class="nav-link text-white">About</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link text-white">Login</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="header-slider">
+        <!-- <img src="assets/image/train.jpg" class="img-fluid"> -->
+        <!-- <div class="centered">Page Name</div> -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="assets/image/slider/1.jpg" style="width:100%">
+                <div class="text">Welcome</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="assets/image/slider/2.jpg" style="width:100%">
+                <div class="text">Badulla Railway station</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="assets/image/slider/3.jpg" style="width:100%">
+                <div class="text">Bandarawela Railway station</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="assets/image/slider/4.jpg" style="width:100%">
+                <div class="text">Domedera Bridgee</div>
+
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="assets/image/slider/5.jpg" style="width:100%">
+                <div class="text">Hatton Railway</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="assets/image/slider/6.jpg" style="width:100%">
+                <div class="text">Nine Arch Bridge</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="assets/image/slider/7.jpg" style="width:100%">
+                <div class="text">Ceylon Railway</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="dot-div" style="text-align:center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="stylebox" id="h-10">
+
+    </div>
+    <div class="container backgroundimg" id="container-body">
+
+        <div class="row">
+            <div class="col-4 mainname">
+                Ceylon
+                <br> Train
+            </div>
+            <div class="col">
+                <div class="maindescription">
+
+                    The Ceylon Railway Department is Ceylon's railway owner and primary operator. As part of the Ceylon government, it is overseen by the Ministry of Transport.
+                    <br>
+                    <br>
+                    <br>
+                    <div class="contentend">
+
+                        <button type="button" class="btn btn-primary ">Read More..</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script/customStript/slidshow.js"></script>
+
+</body>
+
+</html>

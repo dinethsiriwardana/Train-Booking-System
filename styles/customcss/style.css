@@ -1,0 +1,211 @@
+/* ********************************************* 
+            Common
+********************************************* */
+
+
+/* .body{
+    /* background-color:#1a1a1a; */
+
+
+/* } */
+
+.centered {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+}
+
+.img-fluid {
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+    /* transition: 5s; */
+}
+
+.header-img {
+    background: black;
+    /* transition: 5s; */
+    opacity: 1;
+}
+
+#container-body {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.082);
+    align-items: center;
+    margin-bottom: 100px;
+    height: auto;
+    /* height: 100px; */
+}
+
+#container-form {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.082);
+    align-items: center;
+    margin-bottom: 100px;
+    height: auto;
+    /* height: 100px; */
+}
+
+#navbar {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.334);
+}
+
+.active {
+    /* background: brown; */
+    color: blueviolet;
+}
+
+.gallery-p {
+    font-size: 300%;
+    font-family: verdana;
+    color: #e6e6e6;
+}
+
+.img-gallery {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.form-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    /* background-color: rgb(196, 196, 196); */
+    background: rgba(0, 0, 0, 0.082);
+    border-radius: 15px;
+    padding: 25px 10px;
+    /* box-shadow: 0 0 15px rgba(80, 79, 79, 0.587); */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.btns {
+    margin-top: 10;
+    align-items: 15px auto;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    /* text-align: center; */
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 5px 25px;
+}
+
+button:hover {
+    background-color: tomato;
+}
+
+table {
+    width: 100%;
+    align-items: center;
+}
+
+#maintimetable {
+    text-align: center;
+}
+
+#listitemtable {
+    width: 70%;
+    margin-left: 20%;
+    /* align-items: center; */
+}
+
+.mainname {
+    padding-left: 70px;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+}
+
+.maindescription {
+    vertical-align: middle;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.backgroundimg {
+    /* background-color: ; */
+    padding: 50px;
+    background-image: url("assets/image/railway.jpg");
+    /* border: 1px solid red; */
+}
+
+.btn {
+    margin: 0px;
+}
+
+.numberinput {
+    text-align: center;
+    width: 100%;
+}
+
+.bookingbtn {
+    display: none;
+}
+
+.form-text {
+    padding-left: 10px;
+}
+
+#restorbtn:hover {
+    /* font-size: 17px; */
+    /* text-shadow: 1px 1px 3px #00000064; */
+    color: black;
+    /* transition: 1s; */
+}
+
+#savedataalert {
+    display: none;
+    height: 45px;
+    /* vertical-align: middle; */
+}
+
+.alertbox {
+    width: 95%;
+    background-color: #ffe599;
+    color: #634f13;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.vertivalcenter {
+    display: flex;
+    align-items: center;
+}
+
+.alartbutton {
+    margin: 0px;
+    /* box-sizing: border-box; */
+}

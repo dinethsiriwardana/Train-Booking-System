@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="Styles\bootstrap\bootstrap.css">
+    <!--  bootstrap -->
+    <link rel="stylesheet" href="Styles\customcss\style.css">
+    <!--  custom css -->
+    <link rel="stylesheet" href="Styles\customcss\stylebox.css">
+    <!--  custom css -->
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+    <div class="container-fluid bg-dark" id="header1">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"></svg>
+                <span class="fs-4 white">Ceylon Train</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link text-white bg-primary " aria-current="page">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Let's Go
+          </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="trainmap.html">Train Map</a></li>
+                        <li><a class="dropdown-item" href="trainlist.html">Train List</a></li>
+                        <li><a class="dropdown-item" href="#">Train Search</a></li>
+                        <li><a class="dropdown-item" href="costcal.html">Price Calculator</a></li>
+                        <li><a class="dropdown-item" href="booking.html">Train Seat Booking</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                <li class="nav-item"><a href="history.html" class="nav-link text-white">About</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link text-white">Login</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="header-img" id="navbar">
+        <img src="assets/image/train.jpg" class="img-fluid">
+        <div class="centered">Price Calculator</div>
+    </div>
+
+    <div class="stylebox" id="h-10">
+
+    </div>
+    <!-- <div class="container" id="container-form"> -->
+    <div class="form-container">
+
+        <h2>Price Calculator</h2>
+        <form name="myform" action="">
+
+            Stating Point :
+            <select class="form-select mt-2 mb-3" aria-label="Default select example" id="spoint" required>
+
+        <option value="0"> Badulla</option>
+        <option value="1"> Bandarawela</option>
+        <option value="2"> Hatton</option>
+        <option value="3"> Peradeniya Junction</option>
+        <option value="4"> Polgahawela Junction</option>
+        <option value="5"> Gampaha</option>
+        <option value="6"> Maradana</option>
+        <option value="7"> Colombo Fort</option>
+        <option value="8"> Panadura</option>
+        <option value="9"> Galla</option>
+        <option value="10"> Matara</option>
+      </select>
+
+            <br> Ending Point :
+
+            <select class="form-select mt-2 mb-3" aria-label="Default select example" id="fpoint" required>
+        <option value="0"> Badulla</option>
+        <option value="1" selected> Bandarawela</option>
+        <option value="2"> Hatton</option>
+        <option value="3"> Peradeniya Junction</option>
+        <option value="4"> Polgahawela Junction</option>
+        <option value="5"> Gampaha</option>
+        <option value="6"> Maradana</option>
+        <option value="7"> Colombo Fort</option>
+        <option value="8"> Panadura</option>
+        <option value="9"> Galla</option>
+        <option value="10"> Matara</option>
+      </select>
+            <div class="row">
+                <div class="col">
+                    <center>
+                        1st Class
+                    </center>
+                    <input type="number" name="1stclass" class="numberinput" id="1stclass" value="0" min="0" max="30">
+                </div>
+                <div class="col">
+                    <center>
+                        2nd Class
+                    </center>
+                    <input type="number" name="2ndclass" class="numberinput" id="2ndclass" value="0" min="0" max="50">
+                </div>
+                <div class="col">
+                    <center>
+                        3rd Class
+                    </center>
+                    <input type="number" name="3rdclass" class="numberinput" id="3rdclass" value="0" min="0" max="70">
+                </div>
+            </div>
+
+
+
+        </form>
+        <div class="row w-100 mt-4">
+            <div class="col text-end">
+                <button type="submit" id="submit" class="btn btn-danger">Calculate</button>
+            </div>
+
+        </div>
+        <div class="row w-100 mt-3">
+            <div class="col-6 text-end">
+
+            </div>
+            <div class="col text-end">
+                Discount:
+            </div>
+            <div class="col text-end">
+                <p id="discount">
+
+
+                </p>
+            </div>
+
+        </div>
+        <div class="row w-100 ">
+            <div class="col-6 text-end">
+
+            </div>
+            <div class="col text-end">
+                Total:
+            </div>
+            <div class="col text-end">
+                <p id="total">
+                    0.00
+                </p>
+            </div>
+            <!-- <div class="row w-100 mt-1"> -->
+
+            <div class="col text-center bookingbtndiv">
+                <button type="submit" id="bookingbtn" class="btn btn-success">Go to Booking</button>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+
+    </div>
+    <div id="h-10"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="script/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script/customStript/pricecal.js"></script>
+
+</body>
+
+</html>
+
+<!-- 
+
+0 - Badulla
+1 - Bandarawela
+2 - Hatton
+3 - Peradeniya Junction 
+4 - Polgahawela Junction 
+5 - Gampaha
+6 - Maradana
+7 - Colombo Fort 
+8 - Panadura
+9 - Galla
+10 - Matara
+
+
+1  = 300
+2  = 350
+3  = 400
+4  = 450
+5  = 500
+6  = 550
+7  = 600
+8  = 650
+9  = 700
+10 = 750
+ -->

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="Styles\bootstrap\bootstrap.css"> <!--  bootstrap -->
+  <link rel="stylesheet" href="Styles\customcss\style.css"> <!--  custom css -->
+  <link rel="stylesheet" href="Styles\customcss\stylebox.css"> <!--  custom css -->
+  <title>Document</title>
+</head>
+
+<body class="body">
+
+  <div class="container-fluid bg-dark" id="header1">
+    <header class="d-flex flex-wrap justify-content-center py-3">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"></svg>
+        <span class="fs-4 white">Ceylon Train</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link text-white bg-primary " aria-current="page">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Let's Go
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="trainmap.html">Train Map</a></li>
+            <li><a class="dropdown-item" href="#">Train List</a></li>
+            <li><a class="dropdown-item" href="#">Train Search</a></li>
+            <li><a class="dropdown-item" href="#">Price Calculator</a></li>
+            <li><a class="dropdown-item" href="#">Train Seat Booking</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+        <li class="nav-item"><a href="history.html" class="nav-link text-white">About</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link text-white">Login</a></li>
+      </ul>
+    </header>
+  </div>
+
+  <div class="header-img" id="navbar">
+    <img src="assets/image/train.jpg" class="img-fluid">
+    <div class="centered">Page Name</div>
+  </div>
+
+  <div class="stylebox" id="h-10">
+
+  </div>
+  <div class="container" id="container-body">
+
+    <center>
+      <h2><u>Main line</u></h2>
+      <table id="maintimetable">
+        <caption>
+        </caption>
+        <tr>
+          <th>
+            <h2>Name </h2>
+          </th>
+          <th>
+            <h2>From </h2>
+          </th>
+          <th>
+            <h2>Departhre</h2>
+          </th>
+          <th>
+            <h2>To </h2>
+          </th>
+          <th>
+            <h2>Arrival</h2>
+          </th>
+          <th>
+            <h2>Express/Normal</h2>
+          </th>
+        </tr>
+        <tr>
+          <td>Udarata Menike</td>
+          <td>Badulla</td>
+          <td>05.15</td>
+          <td>colombo Fort</td>
+          <td>19.45</td>
+          <td>Express</td>
+        </tr>
+        <tr>
+          <td>Ruhunu Kumari</td>
+          <td>Colombo Fort</td>
+          <td>08.00 </td>
+          <td>Mathara</td>
+          <td>10.00</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>Yal Devi</td>
+          <td>Kankasanthure</td>
+          <td>03.15 </td>
+          <td>Colombo Fort</td>
+          <td>06.00 </td>
+          <td>Normal</td>
+        </tr>
+        <td>Podi Menike</td>
+        <td>Colombo Fort</td>
+        <td>05.55</td>
+        <td>Badulla</td>
+        <td>16.00</td>
+        <td>Express</td>
+        </tr>
+        <tr>
+          <td>(A)</td>
+
+          <td>colombo Fort</td>
+          <td>05.15</td>
+          <td>Mathale</td>
+          <td>09.45</td>
+          <td>Express</td>
+        </tr>
+        <td>Night Mail</td>
+        <td>colombo Fort</td>
+        <td>20.00</td>
+        <td>Badulla</td>
+        <td>07.10</td>
+        <td>Express</td>
+        </tr>
+        <tr>
+          <td>Samudra Devi</td>
+          <td>Maradana</td>
+          <td>16.40</td>
+          <td>Galle</td>
+          <td>20.05</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>Samudra Devi</td>
+          <td>Galla</td>
+          <td>05.00</td>
+          <td>Maradana</td>
+          <td>08.06</td>
+          <td>Express</td>
+        </tr>
+        <tr>
+          <td>Sagarika</td>
+          <td>maradana</td>
+          <td>16.40</td>
+          <td>Mathara</td>
+          <td>19.13</td>
+          <td>Express</td>
+        </tr>
+        <tr>
+          <td>Udarata Menike</td>
+          <td>Colombo Fort</td>
+          <td>09.45</td>
+          <td>Badulla</td>
+          <td>19.45</td>
+          <td>Express</td>
+        </tr>
+        <tr>
+          <td>Ruhunu Kumari</td>
+          <td>Mathara</td>
+          <td>05.20</td>
+          <td>Colombo Fort</td>
+          <td>09.05</td>
+          <td>Express</td>
+        <tr>
+          <td>Night Mail</td>
+          <td>Badulla</td>
+          <td>18.00</td>
+          <td>Colombo Fort</td>
+          <td>05.15</td>
+          <td>Express</td>
+        </tr>
+        <tr>
+          <td>(B)</td>
+          <td>Kandy</td>
+          <td>15.30</td>
+          <td>colombo Fort</td>
+          <td>18.55</td>
+          <td>Express</td>
+        </tr>
+        <tr>
+          <td>Yal Devi</td>
+          <td>Colombo Fort</td>
+          <td>16.00</td>
+          <td>Kankasanthure</td>
+          <td>19.00</td>
+          <td>Express</td>
+        </tr>
+        <tr>
+          <td>(C)</td>
+          <td>Kandy</td>
+          <td>05.00</td>
+          <td>Colombo Fort</td>
+          <td>08.17</td>
+          <td>Normal</td>
+        <tr>
+      </table>
+
+      <br>
+      <h3><u>All trains will stop at the following stations</u></h3>
+      <table id="listitemtable">
+        <tr ul="bold">
+          <td>
+            <li>Ragama</li>
+          </td>
+          <td>
+            <li>Gampaha</li>
+          </td>
+          <td>
+            <li>Peradeniya</li>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <li>Hattan</li>
+          </td>
+          <td>
+            <li>Talawakelle</li>
+          </td>
+          <td>
+            <li>Nanu Oya</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <li>Mirigama</li>
+          </td>
+          <td>
+            <li>Polgahavela</li>
+          </td>
+          <td>
+            <li>Rambukkana</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <li>Haputhale</li>
+          </td>
+          <td>
+            <li>Ella</li>
+          </td>
+          <td>
+            <li>Badulla</li>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <h2><u>Northen line</u></h2>
+      <table border="0" id="maintimetable">
+        <caption>
+        </caption>
+        <tr>
+          <th>
+            <h2>Name </h2>
+          </th>
+          <th>
+            <h2>From </h2>
+          </th>
+          <th>
+            <h2>Departhre</h2>
+          </th>
+          <th>
+            <h2>To </h2>
+          </th>
+          <th>
+            <h2>Arrival</h2>
+          </th>
+          <th>
+            <h2>Express/Normal</h2>
+          </th>
+        </tr>
+
+        <tr>
+          <td>Rajarata Rajini</td>
+          <td>Mathara</td>
+          <td>09.30</td>
+          <td>Colombo Fort</td>
+          <td>13.20</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>Rajarata Rajini</td>
+          <td>Colombo Fort</td>
+          <td>13.30</td>
+          <td>Vavuniya</td>
+          <td>20.20</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>Rajarata Rajini</td>
+          <td>Vavuniya</td>
+          <td>03.30</td>
+          <td>Colombo Fort</td>
+          <td>09.20</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>Night Mail</td>
+          <td>Colombo Fort</td>
+          <td>10.30</td>
+          <td>Mathara</td>
+          <td>14.20</td>
+          <td>Normal</td>
+
+        </tr>
+        <tr>
+          <td>Night Mail</td>
+          <td>Colombo Fort</td>
+          <td>22.30</td>
+          <td>vauniya</td>
+          <td>4.20</td>
+          <td>Normal</td>
+        </tr>
+
+      </table>
+      <h3><u>All trains will stop at the following stations</u></h3>
+      <table border="0" id="listitemtable">
+        <tr ul="bold">
+          <td>
+            <li>Maradana</li>
+          </td>
+          <td>
+            <li>Ganemulla</li>
+          </td>
+          <td>
+            <li>Merigama</li>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <li>Abepussa</li>
+          </td>
+          <td>
+            <li>Alawwa</li>
+          </td>
+          <td>
+            <li>Polgahavela</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <li>Kurunegala</li>
+          </td>
+          <td>
+            <li>Thalava</li>
+          </td>
+          <td>
+            <li>Wellawa</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <li>Anuradapura</li>
+          </td>
+          <td>
+            <li>Medawachchi</li>
+          </td>
+          <td>
+            <li>vauniya</li>
+          </td>
+        </tr>
+      </table>
+      </table>
+      <br>
+      <h2><u>Putthalama line</u></h2>
+      <table border="0" id="maintimetable">
+        <caption>
+        </caption>
+        <tr>
+          <th>
+            <h2>Name </h2>
+          </th>
+          <th>
+            <h2>From </h2>
+          </th>
+          <th>
+            <h2>Departhre</h2>
+          </th>
+          <th>
+            <h2>To </h2>
+          </th>
+          <th>
+            <h2>Arrival</h2>
+          </th>
+          <th>
+            <h2>Express/Normal</h2>
+          </th>
+        </tr>
+
+        <tr>
+          <td>(A)</td>
+          <td>putthalama</td>
+          <td>04.30</td>
+          <td>Colombo Fort</td>
+          <td>08.20</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>(A)</td>
+          <td>Colombo Fort</td>
+          <td>17.30</td>
+          <td>putthalama</td>
+          <td>20.20</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>(B)</td>
+          <td>chilaw</td>
+          <td>05.30</td>
+          <td>Colombo Fort</td>
+          <td>07.20</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>Muthu Kumari</td>
+          <td>Colombo Fort</td>
+          <td>10.30</td>
+          <td>puttalama</td>
+          <td>12.20</td>
+          <td>Normal</td>
+
+        </tr>
+        <tr>
+          <td>Night Mail</td>
+          <td>Colombo Fort</td>
+          <td>22.30</td>
+          <td>Noor Nagara</td>
+          <td>00.20</td>
+          <td>Normal</td>
+        </tr>
+      </table>
+      <br>
+      <h3><u>All trains will stop at the following stations</u></h3>
+      <table id="listitemtable">
+        <tr ul="bold">
+          <td>
+            <li>Ragama</li>
+          </td>
+          <td>
+            <li>Ja ela</li>
+          </td>
+          <td>
+            <li>seeduwa</li>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <li>Negambo</li>
+          </td>
+          <td>
+            <li>lunawila</li>
+          </td>
+          <td>
+            <li>Putthalama</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <li>Mirigama</li>
+          </td>
+          <td>
+            <li>Chilaw</li>
+          </td>
+          <td>
+            <li>Noor Nagar</li>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <li>Kochchikade</li>
+          </td>
+          <td>
+            <li>katunayaka</li>
+          </td>
+          <td>
+            <li>kurana</li>
+          </td>
+        </tr>
+      </table>
+<br>
+      <h2><u>Kelani Valley line</u></h2>
+      <table border="0" frame="box" id="maintimetable">
+        <caption>
+        </caption>
+        <tr>
+          <th>
+            <h2>Name </h2>
+          </th>
+          <th>
+            <h2>From </h2>
+          </th>
+          <th>
+            <h2>Departhre</h2>
+          </th>
+          <th>
+            <h2>To </h2>
+          </th>
+          <th>
+            <h2>Arrival</h2>
+          </th>
+          <th>
+            <h2>Express/Normal</h2>
+          </th>
+        </tr>
+
+        <tr>
+          <td>(A)</td>
+          <td>Avissawella</td>
+          <td>16.30</td>
+          <td>Colombo Fort</td>
+          <td>18.20</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>(B)</td>
+          <td>Colombo Fort</td>
+          <td>08.30</td>
+          <td>Avissawella</td>
+          <td>10.20</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>(B)</td>
+          <td>Avissawella</td>
+          <td>03.30</td>
+          <td>Colombo Fort</td>
+          <td>05.20</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>Night Mail</td>
+          <td>Colombo Fort</td>
+          <td>10.30</td>
+          <td>Avissawella</td>
+          <td>12.20</td>
+          <td>Normal</td>
+
+        </tr>
+        <tr>
+          <td>Night Mail</td>
+          <td>Colombo Fort</td>
+          <td>22.30</td>
+          <td>Avissawella</td>
+          <td>00.20</td>
+          <td>Normal</td>
+        </tr>
+
+
+
+    </center>
+
+    <!-- </div> -->
+  </div>
+  <!-- <br> -->
+
+  <script src="script/bootstrap/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+<!-- Welcome page
+Train Map
+Gallery (ලස්සන තැන්)
+Price calculator 
+train list
+train search( ඒ කිව්වෙ සාමාන්‍ය ගමනට මේක හොදයි ට්‍රිප් වලට මේක හොදයි)
+seat booking page
+ -->

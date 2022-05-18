@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="Styles\bootstrap\bootstrap.css">
+    <!--  bootstrap -->
+    <link rel="stylesheet" href="Styles\customcss\style.css">
+    <!--  custom css -->
+    <link rel="stylesheet" href="Styles\customcss\stylebox.css">
+    <!--  custom css -->
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+    <div class="container-fluid bg-dark" id="header1">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"></svg>
+                <span class="fs-4 white">Ceylon Train</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link text-white bg-primary " aria-current="page">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Let's Go
+          </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="trainmap.html">Train Map</a></li>
+                        <li><a class="dropdown-item" href="trainlist.html">Train List</a></li>
+                        <li><a class="dropdown-item" href="#">Train Search</a></li>
+                        <li><a class="dropdown-item" href="costcal.html">Price Calculator</a></li>
+                        <li><a class="dropdown-item" href="#">Train Seat Booking</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                <li class="nav-item"><a href="history.html" class="nav-link text-white">About</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link text-white">Login</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="header-img" id="navbar">
+        <img src="assets/image/train.jpg" class="img-fluid">
+        <div class="centered">Price Calculator</div>
+    </div>
+
+    <div class="stylebox" id="h-10">
+
+
+    </div>
+    <!-- <div class="container" id="container-form"> -->
+    <div class="form-container">
+
+        <h2>Seat Booking Form</h2>
+
+
+        <!-- <div class="alert alert-warning alert-dismissible fade show w-100" id="savedataalert" role="alert">
+            <div class="alerttext">
+                Save Data Found<strong id="restorbtn"><a> Click Here</a>  </strong>
+            </div>
+            <button type="button" class="btn-close p-2" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div> -->
+
+        <div class="alertbox ">
+            <div class="row vertivalcenter">
+                <div class="col-9">
+                    Save Data Found<strong id="restorbtn"><a> Click Here</a>  </strong> to Restore
+                </div>
+                <div class="col-3">
+                    <button type="button" class="alartbutton">ddd</button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <form name="myform" action="">
+            <div class="row mt-1">
+                <div class="col-3">
+                    <h4>
+                        From :
+                    </h4>
+                </div>
+                <div class="col-3">
+                    <h4 id="spoint">
+                        xxxxxxxxxxxx
+                    </h4>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-3">
+                    <h4>
+                        To :
+                    </h4>
+                </div>
+                <div class="col-3">
+                    <h4 id="fpoint">
+                        xxxxxxxxxxxx
+                    </h4>
+                </div>
+            </div>
+
+            <h5 class="text-m">
+
+                <div class="row">
+                    <div class="col">
+                        # of Class 1 Tickets :-
+                    </div>
+                    <div class="col-3" id="class1">
+                        00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        # of Class 2 Tickets :-
+                    </div>
+                    <div class="col-3" id="class2">
+                        00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        # of Class 3 Tickets :-
+                    </div>
+                    <div class="col-3" id="class3">
+                        00
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        Total Cost :-
+                    </div>
+                    <div class="col-3" id="total">
+                        00
+                    </div>
+                </div>
+            </h5>
+
+
+            <div class="mt-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <div id="emailerr" class="form-text text-danger">Invalide Email Addrss</div>
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" required>
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" placeholder="name@example.com" required>
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Tel Number</label>
+                <input type="phone" class="form-control" id="phone" placeholder="07XXXXXXXX" required>
+                <div id="phoneerr" class="form-text text-danger">Invalide Mobile Number</div>
+            </div>
+
+            <div class="row">
+
+                <div class="col text-center bookingbtndiv">
+                    <br>
+                    <button type="button" id="saveforlate" class="btn btn-primary">Save For Late</button>
+                </div>
+                <div class="col text-center bookingbtndiv">
+                    <br>
+                    <button type="button" id="bookingbtn" class="btn btn-success">Booking</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- <div class="row w-100 mt-1"> -->
+    </div>
+
+
+    <!-- </div> -->
+
+    </div>
+    <div id="h-10"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="script/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script/customStript/booking.js"></script>
+
+</body>
+
+</html>
+
+<!-- 
+
+0 - Badulla
+1 - Bandarawela
+2 - Hatton
+3 - Peradeniya Junction 
+4 - Polgahawela Junction 
+5 - Gampaha
+6 - Maradana
+7 - Colombo Fort 
+8 - Panadura
+9 - Galla
+10 - Matara
+
+
+1  = 300
+2  = 350
+3  = 400
+4  = 450
+5  = 500
+6  = 550
+7  = 600
+8  = 650
+9  = 700
+10 = 750
+ -->
