@@ -198,6 +198,7 @@ table {
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+    /* display: none; */
 }
 
 .vertivalcenter {
@@ -209,3 +210,5 @@ table {
     margin: 0px;
     /* box-sizing: border-box; */
 }
+
+.alertboxclose:hover {}
