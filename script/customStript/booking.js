@@ -37,7 +37,7 @@ function restorbtn() {
     var savedata = $.cookie('saveforlate');
     var url = (document.URL);
     params = (new URL(url + savedata)).searchParams;
-    console.log(savedata);
+    // console.log(savedata);
     // console.log(params.get('fpoint'));
     // console.log(params.get('1stclass'));
 
@@ -63,6 +63,12 @@ function cookieload() {
         // console.log('NOdata');
         // dataload();
         $('#savedataalert').hide();
+        params = (new URL(document.URL)).searchParams;
+        if (params.get('fpoint') == null) {
+            window.location.replace('costcal.html');
+
+        }
+
 
     } else {
         // console.log('hasdata');
@@ -83,6 +89,7 @@ function dataload() {
     document.getElementById('class2').innerHTML = params.get('2ndclass')
     document.getElementById('class3').innerHTML = params.get('3rdclass')
     document.getElementById('total').innerHTML = Math.round(params.get('costforall')) + '.00'
+        // console.log(params.get('spoint'));
 
 
 }
