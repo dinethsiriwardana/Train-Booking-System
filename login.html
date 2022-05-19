@@ -9,9 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="Styles\bootstrap\bootstrap.css"> <!--  bootstrap -->
-    <link rel="stylesheet" href="Styles\customcss\style.css"> <!--  custom css -->
-    <link rel="stylesheet" href="Styles\customcss\stylebox.css"> <!--  custom css -->
+    <link rel="stylesheet" href="Styles\bootstrap\bootstrap.css">
+    <!--  bootstrap -->
+    <link rel="stylesheet" href="Styles\customcss\style.css">
+    <!--  custom css -->
+    <link rel="stylesheet" href="Styles\customcss\stylebox.css">
+    <!--  custom css -->
     <title>Document</title>
 </head>
 
@@ -28,8 +31,7 @@
                 <li class="nav-item"><a href="#" class="nav-link text-white bg-primary " aria-current="page">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Let's Go
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -43,7 +45,7 @@
                 <li class="nav-item"><a href="gallery.html" class="nav-link text-white">Gallery</a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
-                
+
                 <li class="nav-item"><a href="login.html" class="nav-link text-white">Login</a></li>
             </ul>
         </header>
@@ -57,45 +59,39 @@
     <div class="stylebox" id="h-10">
 
     </div>
-    <div class="container" id="container-body">
-        <div class="form-container">
+    <!-- <div class="container" id="container-body"> -->
+    <div class="form-container">
 
-            <h2>Login</h2>
-            <form action="" onsubmit="return validateForm()" method="post">
-                User Name :
-                <input type="text" name="username" id="username">
-                Password :
-                <input type="password" name="pass" id="pass">
-                <div class="row">
-                    <div class="col-5">
-                        <button type="submit">Login</button>
-                    </div>
-                    <div class="col">
-                        <a href="registration.html"><button type="button" id="sign-up">Sign Up</button></a>
-                    </div>
+        <h2>Login</h2>
+        <form action="" onsubmit="return validateForm()" method="post">
+            User Name :
+            <input type="text" name="username" id="username"> Password :
+            <input type="password" name="pass" id="pass">
+            <div class="row text-center mt-3">
+                <div class="col">
+                    <button type="submit">Login</button>
                 </div>
-                <div class="row">
-                    <div class="col text-center">
-                        No Account ? 
-                        <a href="register.html">Register</a>
-                    </div>
-                </div>   
-            </form>
-            <script>
-                function validateForm() {
-                    var name = document.getElementById("username").value;
-                    if (name == null || name == "") {
-                        alert("User Name should be filledout");
-                        return false;
-                    }
+                <div class="col">
+                    <a href="registration.html"><button type="button" id="sign-up">Sign Up</button></a>
+                </div>
+            </div>
+
+        </form>
+        <script>
+            function validateForm() {
+                var name = document.getElementById("username").value;
+                if (name == null || name == "") {
+                    alert("User Name should be filledout");
+                    return false;
                 }
-            </script>
-        </div>
-        <br>
-        <br>
-        <br>
+            }
+        </script>
+        <!-- </div> -->
 
     </div>
+    <br>
+    <br>
+    <br>
 
 
 

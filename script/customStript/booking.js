@@ -10,18 +10,23 @@ $(document).ready(function() {
     var url = dataload();
 
     $('#bookingbtn').click(function() {
-        var formvali = formvalidation();
+        $('#bookingform').hide();
+        $('#formsuccess').show();
+
     });
     $('#saveforlate').click(function() {
         var formvali = formvalidation();
         if (formvali) {
-            saveforlate(url);
+            saveforlate();
             window.location.replace("booking.html");
 
         }
     });
     $('#restorbtn').click(function() {
         restorbtn()
+    });
+    $('#alertboxclose').click(function() {
+        $('#savedataalert').hide(1000);
     });
 
 
@@ -82,7 +87,7 @@ function dataload() {
 
 }
 
-function saveforlate(url) {
+function saveforlate() {
     var spoint = document.getElementById('spoint').innerHTML
     var fpoint = document.getElementById('fpoint').innerHTML
     var class1 = document.getElementById('class1').innerHTML
