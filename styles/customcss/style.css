@@ -234,4 +234,18 @@ table {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    border: 2px solid red;
+    position: relative;
+}
+
+.customcard::after{
+    content: 'Saved Data Found';
+    position: absolute;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    top: -15px;
+    right: 5px;
+    font-size: 10px;
+    /* display: block; none හරි block හරි දාගන්න */
 }
