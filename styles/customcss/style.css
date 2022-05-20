@@ -238,14 +238,27 @@ table {
     position: relative;
 }
 
-.customcard::after{
+.customcardshow::after {
     content: 'Saved Data Found';
     position: absolute;
     background-color: red;
+    color: white;
     padding: 5px;
     border-radius: 5px;
     top: -15px;
     right: 5px;
     font-size: 10px;
-    /* display: block; none හරි block හරි දාගන්න */
+    display: block;
+}
+
+.customcardshow:hover {
+    background-color: red;
+    transition: 1S;
+}
+
+.customfooter {
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }

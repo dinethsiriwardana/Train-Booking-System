@@ -10,6 +10,8 @@ $(document).ready(function() {
     var url = dataload();
 
     $('#bookingbtn').click(function() {
+        $.cookie('saveforlate', '')
+
         $('#bookingform').hide();
         $('#formsuccess').show();
 
