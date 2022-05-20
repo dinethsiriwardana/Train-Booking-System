@@ -1,4 +1,6 @@
+document.title = 'Ceylon Train';
 $(document).ready(function() {
+
 
     $('#trainmap').click(function() {
         window.location.replace('trainmap.html');
