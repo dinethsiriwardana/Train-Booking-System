@@ -51,6 +51,10 @@ function costcal(spoint, fpoint) {
     } else {
         var stationnum = (spoint - fpoint)
     }
+    if (stationnum <= -1) {
+        stationnum = stationnum * -1
+    }
+    // console.log(stationnum)
     switch (stationnum) {
         case 1:
             costfortrip = 300;
