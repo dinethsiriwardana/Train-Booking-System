@@ -18,9 +18,9 @@ $(document).ready(function() {
     $('#gallery').click(function() {
         window.location.replace('gallery.html');
     });
-    // $('#contact').click(function() {
-    //     window.location.replace('trainmap.html');
-    // });
+    $('#contact').click(function() {
+        window.location.replace('contactus.html');
+    });
     $('#about').click(function() {
         window.location.replace('history.html');
     });

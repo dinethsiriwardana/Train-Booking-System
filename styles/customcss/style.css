@@ -7,6 +7,11 @@ body {
     margin: 0
 }
 
+.body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
 .centered {
     position: absolute;
     top: 37%;
@@ -14,6 +19,7 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 70px;
+    text-align: center;
 }
 
 .img-fluid {
@@ -32,7 +38,7 @@ body {
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.082);
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     height: auto;
     /* height: 100px; */
 }
@@ -210,4 +216,22 @@ table {
 
 .nav-item {
     cursor: pointer;
+}
+
+.indexbody {
+    padding: 50px;
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.082);
+}
+
+.customcard {
+    min-height: 40px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    border-radius: 10px;
 }
