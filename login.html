@@ -72,7 +72,7 @@
                     <button type="submit">Login</button>
                 </div>
                 <div class="col">
-                    <a href="registration.html"><button type="button" id="sign-up">Sign Up</button></a>
+                    <a href="register.html"><button type="button" id="sign-up">Sign Up</button></a>
                 </div>
             </div>
 
@@ -80,8 +80,13 @@
         <script>
             function validateForm() {
                 var name = document.getElementById("username").value;
+                var name = document.getElementById("pass").value;
                 if (name == null || name == "") {
                     alert("User Name should be filledout");
+                    return false;
+                }
+                if (name != "admin" || pass != "password") {
+                    alert("wrong User Name or password ");
                     return false;
                 }
             }
