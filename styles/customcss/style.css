@@ -182,6 +182,7 @@ table {
     /* font-size: 17px; */
     /* text-shadow: 1px 1px 3px #00000064; */
     color: black;
+    cursor: pointer;
     /* transition: 1s; */
 }
 
@@ -216,6 +217,11 @@ table {
 
 .nav-item {
     cursor: pointer;
+}
+
+#navbutton {
+    /* border: 2px red solid; */
+    color: #1976D2;
 }
 
 .indexbody {

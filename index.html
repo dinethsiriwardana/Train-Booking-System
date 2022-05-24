@@ -24,13 +24,13 @@
 
     <div class="container-fluid bg-dark" id="header1">
         <header class="d-flex flex-wrap justify-content-center py-3">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32"></svg>
                 <span class="fs-4 white">Ceylon Train</span>
             </a>
 
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html" class="nav-link text-white bg-primary " aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link text-white bg-primary" aria-current="page" id="navbutton">Home</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Let's Go
@@ -42,14 +42,15 @@
                         <li id="seatbooking"><a class="dropdown-item">Train Seat Booking</a></li>
                     </ul>
                 </li>
-                <li class="nav-item" id="gallery"><a class="nav-link text-white">Gallery</a></li>
-                <li class="nav-item" id="contact"><a class="nav-link text-white">Contact</a></li>
-                <li class="nav-item" id="about"><a class="nav-link text-white">About</a></li>
-                <li class="nav-item" id="login"><a class="nav-link text-white">Login</a></li>
+                <li class="nav-item" id="gallery"><a class="nav-link text-white" id="navbutton">Gallery</a></li>
+                <li class="nav-item" id="contact"><a class="nav-link text-white" id="navbutton">Contact</a></li>
+                <li class="nav-item" id="about"><a class="nav-link text-white" id="navbutton">About</a></li>
+                <li class="nav-item" id="login"><a class="nav-link text-white" id="navbutton">Login</a></li>
             </ul>
         </header>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="script/jquery-3.6.0.min.js"></script>
     <script src="script/customStript/navbar.js"></script>
 
     <div class="header-slider">
@@ -206,6 +207,8 @@
     </div>
 
     <script src="script/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script type="application/javascript" src="script/jquery.cookie.min.js"></script>
     <script src="script/customStript/slidshow.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
