@@ -11,9 +11,14 @@ $(document).ready(function() {
 
     $('#bookingbtn').click(function() {
         $.cookie('saveforlate', '')
+        var formvali = formvalidation();
+        if (formvali) {
 
-        $('#bookingform').hide();
-        $('#formsuccess').show();
+
+            $('#bookingform').hide();
+            $('#formsuccess').show();
+        }
+
 
     });
     $('#saveforlate').click(function() {
@@ -117,31 +122,42 @@ function saveforlate() {
 function formvalidation() {
     emailaddress = document.getElementById('email').value;
     phone = document.getElementById('phone').value;
-    // console.log(phone.length);
+    console.log(emailaddress);
 
-    function validateEmail($email) {
-        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        return emailReg.test($email);
+    // function validateEmail(email) {
+    //     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+    //     return emailReg.test(email);
+    // }
+    function validateEmail(emailaddress) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailaddress)) {
+            return (true)
+        }
+        // alert("You have entered an invalid email address!")
+        return (false)
     }
-    var errcode = 0
+
+    var errcodephone = 0
+    var errcodeemail = 0
     if ((phone.length) != 10) {
         $('#phoneerr').show(200);
-        errcode = 1;
+        errcodephone = 1;
 
     } else {
         $('#phoneerr').hide(500);
-        errcode = 0;
+        errcodephone = 0;
     }
     if (!validateEmail(emailaddress)) {
-        errcode = 1;
+        errcodeemail = 1;
         $('#emailerr').show(200);
 
     } else {
         $('#emailerr').hide(500);
-        errcode = 0;
+        errcodeemail = 0;
 
     }
-    if (errcode == 1) {
+    // console.log(errcode);
+    if (errcodephone == 1 || errcodeemail == 1) {
         return false
     }
     return true
